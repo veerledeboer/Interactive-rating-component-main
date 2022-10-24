@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <div class="ratingCard" id="vote">
+    <img src="images/icon-star.svg" alt="Orange Star Icon" id="ratingImg">
+    
+    <heading>
+      <h1>How did we do?</h1>
+    </heading>
+    
+    <Main>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+      <div class="ratingButtons">
+        
+          <button class="rButton" value="1" onclick="bla(event)" name="rate1">1</button>
+          <button class="rButton" value="2" onclick="bla(event)" name="rate2">2</button>
+          <button class="rButton" value="3" onclick="bla(event)" name="rate3">3</button>
+          <button class="rButton" value="4" onclick="bla(event)" name="rate4">4</button>
+          <button class="rButton" value="5" onclick="bla(event)" name="rate5">5</button>
+        
+      </div>
+
+      <button class="submit" id="submit">Submit</button>
+    </Main>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="thankYouCard hidden"  id="thankYou" > 
+     <!--hidden does not work??  -->
+    <header>
+      <img src="images/illustration-thank-you.svg" alt="Thank You illustration" id="thankYouImg">
+    </header>
+    <main>
+      <div class="finalRating"><p>You selected <span id="rating"></span> out of 5</p></div>
+
+      <h1 class="thankYouTitle">Thank you!</h1>
+
+      <p class="thankYouText">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </main>
+  </div>
+    <!-- Thank you state end -->
+ 
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Veerle</a>.</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

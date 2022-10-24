@@ -1,0 +1,159 @@
+:root {
+    background-color:  hsl(216, 12%, 8%); 
+    font-synthesis: none;
+    font-family: Overpass, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    line-height: 1.5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture, 
+svg {
+   max-width: 100%;
+   display: block;
+}
+
+#ratingImg {
+    background-color: hsl(213, 17%, 30%) ;
+    border: solid hsl(213, 17%, 30%);
+    border-radius: 90%;
+    color: hsl(217, 12%, 63%);
+    align-items: flex-start;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.4rem;
+}
+
+.ratingCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 30vw;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(213, 19%, 18%);
+    border-radius:10px;
+    margin:2em;
+    padding: 2em;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    padding: 1rem 0 1rem 0;
+    color: hsl(0, 0%, 100%);
+  }
+
+p {
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+
+/* focus on bigger box to spread all separate buttons evenly */
+.ratingButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rButton {
+    background-color: hsl(213, 17%, 30%) ;
+    border: solid hsl(213, 17%, 30%);
+    color: hsl(217, 12%, 63%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+/* button effect when hovered */
+.rButton:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: solid hsl(25, 97%, 53%);
+}
+
+/* effect of button when clicked */
+.rButton:focus{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+    border: solid hsl(0, 0%, 100%);
+}
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: solid hsl(25, 97%, 53%);
+    width: 100%;
+    border-radius: 25px;
+    padding: 0.7em;
+    margin: 2em 0;
+    text-transform: uppercase;
+}
+.submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+    border: solid hsl(0, 0%, 100%);
+}
+
+.thankYouCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 30vw;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(213, 19%, 18%);
+    border-radius:10px;
+    margin:2em;
+    padding: 2em;
+}
+
+.thankYouTitle, .thankYouText {
+    text-align: center;
+}
+
+.finalRating {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 17%, 30%);
+    border-radius: 10px;
+    width: 12rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {   
+    display: none;
+}
